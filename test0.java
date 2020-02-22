@@ -1,7 +1,8 @@
  import java.util.Scanner;
- //Constructor
+
 public class test0{
     char arr[] ;
+  //Constructor
     public test(String x){
         arr = new char[x.length()];
     }
