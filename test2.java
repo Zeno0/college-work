@@ -1,5 +1,5 @@
  import java.util.Scanner;
- public class test{
+ public class test2{
     char arr[] ;
     char c_arr[];
     
