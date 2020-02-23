@@ -5,7 +5,7 @@ public class test1{
     char arr[] ;
     int length;
     // Constructor
-    public test(String x){
+    public test1(String x){
         arr = new char[x.length()];
     }
     // calculate length method
@@ -26,7 +26,7 @@ public class test1{
         System.out.println("please enter whatever you want in one line ");
         Scanner scan = new Scanner(System.in);
        String x = scan.nextLine(); 
-       test t =new test(x);
+       test1 t =new test1(x);
         System.out.println("String entered by the user is "+x);
         t.calclenght(x);  // method invoked
         System.out.println("Lenght of String by using in-built function: "+x.length());

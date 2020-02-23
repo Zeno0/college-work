@@ -5,7 +5,7 @@ public class test3{
     char arr1[] ;
     char arr2[];
    //Constructor
-    public test(String x,String y){
+    public test3(String x,String y){
         arr1 = new char[x.length()];
         arr2 = new char[y.length()];
     }
@@ -44,7 +44,7 @@ public class test3{
        String x = scan.nextLine(); 
        System.out.println("Once again please enter whatever you want in one line ");
        String y = scan.nextLine(); 
-       test t =new test(x,y);
+       test3 t =new test3(x,y);
        System.out.println("String entered by the user is "+x+" and "+y);
       
        System.out.println("String 1 and 2 are compared "+ t.compare(x, y));  // invoke method

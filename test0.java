@@ -3,7 +3,7 @@
 public class test0{
     char arr[] ;
   //Constructor
-    public test(String x){
+    public test0(String x){
         arr = new char[x.length()];
     }
    //display method
@@ -23,7 +23,7 @@ public class test0{
         System.out.println("please enter whatever you want in one line ");
         Scanner scan = new Scanner(System.in);
        String x = scan.nextLine(); 
-       test t =new test(x);
+       test0 t =new test0(x);
         System.out.println("String entered by the user is "+x);
         t.display(x);
     }

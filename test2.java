@@ -4,7 +4,7 @@
     char c_arr[];
     
    // Constructor
-    public test(String x){
+    public test2(String x){
         arr = new char[x.length()];
     }
     // concat method
@@ -36,7 +36,7 @@
         System.out.println("please enter whatever you want in one line ");
         Scanner scan = new Scanner(System.in);
        String x = scan.nextLine(); 
-       test t =new test(x);
+       test2 t =new test2(x);
        String y = "whatever";
         System.out.println("String entered by the user is "+x);
         t.concat(x, y);   // method invoked
