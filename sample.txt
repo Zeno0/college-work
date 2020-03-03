@@ -1,0 +1,1 @@
+This is just a sample to count the number of characters and words in this file
