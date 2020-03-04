@@ -43,7 +43,6 @@ public class test5 {
 
     // To create words list
     public ArrayList wordlist() {
-        line.replace(" ", "");
         stringtoken = new StringTokenizer(line, " ");
         while (stringtoken.hasMoreTokens()) {
             wordlist.add(stringtoken.nextToken());

@@ -50,8 +50,6 @@ public class test4 {
 
 // To create character list
 public ArrayList characterlist() {
-    line.replace(" ", "");
-    array = stringT0Char(line);
     for (int i = 0; i < array.length; i++) {
         char temp = array[i];
 
