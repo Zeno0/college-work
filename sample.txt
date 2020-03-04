@@ -1,1 +1,1 @@
-This is just a sample to count the number of characters and words in this file
+This is just a sample to count the number of characters and words in this file and this is to get the repeated number of words

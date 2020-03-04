@@ -84,7 +84,7 @@ public class string {
         String input3 = scan.nextLine();                  // token to find
         s.findString(input1, input3);
         scan.close();
-        
+ 
     }
     
 }
