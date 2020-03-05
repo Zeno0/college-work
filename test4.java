@@ -10,6 +10,7 @@ public class test4 {
     BufferedReader bre = null;
     String line = null;
     char[] array = null;
+    String data = "";
     
      // Constructor
      public test4() {
@@ -31,16 +32,22 @@ public class test4 {
         try {
             bre = new BufferedReader(new FileReader(f));
             line = bre.readLine();
+            
+            while( line != null){
+               
+                data = data +" "+ line ;
+                line = bre.readLine();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("sample.txt contains: " + line);
-        return line;
+        System.out.println("sample.txt contains: " + data);
+        return data;
 
     }
    // To create words list
    public ArrayList wordlist() {
-    stringtoken = new StringTokenizer(line, " ");
+    stringtoken = new StringTokenizer(data, " ");
     while (stringtoken.hasMoreTokens()) {
         wordlist.add(stringtoken.nextToken());
     }
@@ -50,6 +57,7 @@ public class test4 {
 
 // To create character list
 public ArrayList characterlist() {
+    array = stringT0Char(data);
     for (int i = 0; i < array.length; i++) {
         char temp = array[i];
 
@@ -70,6 +78,7 @@ public ArrayList characterlist() {
         t.characterlist();
         System.out.println("NUmber of words in sample,txt is: "+t.wordlist.size());
         System.out.println("NUmber of characters in sample,txt is: "+t.characterlist.size());
+        
         
 
         /*

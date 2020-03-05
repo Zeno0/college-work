@@ -11,6 +11,7 @@ public class test5 {
     String line = null;
     char[] array = null;
     int [] freq = null;
+    String data = "";
 
     // Constructor
     public test5() {
@@ -28,46 +29,49 @@ public class test5 {
         return arr;
     }
 
-    // To read data from .txt file
-    public String read() {
+      // To read data from .txt file
+      public String read() {
         try {
             bre = new BufferedReader(new FileReader(f));
             line = bre.readLine();
+            
+            while( line != null){
+               
+                data = data +" "+ line ;
+                line = bre.readLine();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("sample.txt contains: " + line);
-        return line;
+        System.out.println("sample.txt contains: " + data);
+        return data;
 
     }
+   // To create words list
+   public ArrayList wordlist() {
+    stringtoken = new StringTokenizer(data, " ");
+    while (stringtoken.hasMoreTokens()) {
+        wordlist.add(stringtoken.nextToken());
+    }
+  //  System.out.println(wordlist.toString());
+    return wordlist;
+}
 
-    // To create words list
-    public ArrayList wordlist() {
-        stringtoken = new StringTokenizer(line, " ");
-        while (stringtoken.hasMoreTokens()) {
-            wordlist.add(stringtoken.nextToken());
+// To create character list
+public ArrayList characterlist() {
+    array = stringT0Char(data);
+    for (int i = 0; i < array.length; i++) {
+        char temp = array[i];
+
+        if (temp == ' ') {
+
+        } else {
+            characterlist.add(array[i]);
         }
-        System.out.println(wordlist.toString());
-        return wordlist;
     }
-
-    // To create character list
-    public ArrayList characterlist() {
-        line.replace(" ", "");
-        array = stringT0Char(line);
-        for (int i = 0; i < array.length; i++) {
-            char temp = array[i];
-
-            if (temp == ' ') {
-
-            } else {
-                characterlist.add(array[i]);
-            }
-        }
-        System.out.println(characterlist.toString());
-        return characterlist;
-    }
-
+  //  System.out.println(characterlist.toString());
+    return characterlist;
+}
     public void frequencyOfChar(){
         freq = new int[array.length];
         for(int i = 0; i<array.length; i++){
