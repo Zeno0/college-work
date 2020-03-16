@@ -1,5 +1,5 @@
 # college-work
- ##  String class 
+##  String class 
 ###   stringToChar(String)
         method with an String argument which prints and return the char array.
 ###  indexOfString(String)
@@ -10,16 +10,16 @@
         It returns the number of characters.
    
 ## test0
-  ### display(String) 
+### display(String) 
      It displays the character array of String, taken by the user.
 ## test1
-  ### calclength(String)
+### calclength(String)
      It calculates the string length.
 ## test2
-  ### concat(String,String)
+### concat(String,String)
     It concats two string.
 ## test3
-  ### stringToChar(String)
+### stringToChar(String)
     It converts the String to Character Array.
-  ### compare(String,String)
+### compare(String,String)
      It compares two String and returns integer value accordingly.
