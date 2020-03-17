@@ -75,11 +75,11 @@ public ArrayList characterlist() {
     public void frequencyOfChar(){
         freq = new int[array.length];
         for(int i = 0; i<array.length; i++){
-            freq[i]=1;
-            for(int j= i+1;j<array.length;j++){
-                if(array[i] == array[j]){
+            freq[i]=1; //set '1' at the 0 index of freq array
+            for(int j= i+1;j<array.length;j++){// inner loop
+                if(array[i] == array[j]){ // check weather character at i is equal for all j or not
                     freq[i]++;
-                    array[j]='0';
+                    array[j]='0'; // to eliminate the checked character
 
                 }
             }
@@ -87,13 +87,16 @@ public ArrayList characterlist() {
 
         System.out.println("Characters and their frequencies: ");
         for(int i=0;i<freq.length; i++){
-           if(array[i]!=' ' && array[i]!='0'){
+           if(array[i]!=' ' && array[i]!='0'){ // condition to print frequencies
                System.out.println(array[i]+"-"+freq[i]);
            }
         }
     }
 
     public void frequencyOfWord(){
+
+    // Similar steps are taken for it, as taken for frequencyOfChar method 
+
         String [] arr =new String[wordlist.size()];
         for(int i=0; i<arr.length;i++){
             arr[i] = wordlist.get(i);
