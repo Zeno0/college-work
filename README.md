@@ -64,3 +64,14 @@ It creates the Arraylist which stores all the word fronm the smaple, by using th
 It checks for the string given as an argument in the wordlist and returns the position of the string found in the list.
 ### replace(String,String)
 It replaces the word from the ArrayList, by the provided word.
+..................................................
+## test7 
+Its constructor initializes all file and all ArrayList.
+### char stringToChar(String)
+It converts the String to Character Array.
+### String read()
+It reads the data  from the sample file and stores it in a String variable.
+### ArrayList wordlist()
+It creates the Arraylist which stores all the word fronm the smaple, by using the StringTokenizer.
+### int count(String)
+It uses regex library to create a pattern by the argumented String and match it with the data set. It returns the count of occurence of argumented String.
