@@ -1,7 +1,7 @@
 using System;
 namespace New_folder
 {
-class test
+class test10
 {
 static void Main(string[] args)
 {
